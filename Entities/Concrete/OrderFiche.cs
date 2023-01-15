@@ -14,7 +14,7 @@ namespace Entities.Concrete
 
         public DateTime ORDERTARİH { get; set; }
         public int CUSTOMERID { get; set; }
-        public float TOTALPRICE { get; set; }
+        public decimal TOTALPRICE { get; set; }
          
 
         public DateTime DELIVERYDATE { get; set; }

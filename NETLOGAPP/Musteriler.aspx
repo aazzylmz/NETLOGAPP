@@ -22,8 +22,8 @@
             </div>
         </div>
 
-        <!--Modal Bayi Save  Start-->
-        <div class="modal fade" id="PopupBayiSave" tabindex="-1" role="dialog" aria-labelledby="bayiSave" aria-hidden="true">
+        <!--Modal Musteri Save  Start-->
+        <div class="modal fade" id="PopupMusteriSave" tabindex="-1" role="dialog" aria-labelledby="musteriSave" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -60,6 +60,8 @@
                 </div>
             </div>
         </div>
+    <!--End-->
+
         <div class="row">
             <div class="col-lg-12 ">
                 <div class="table-responsive">

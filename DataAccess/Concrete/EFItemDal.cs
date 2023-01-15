@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete
 {
-   public class EFItemDal : EfEntityRepository<Item, EticaretContext>, IItemDal
+   public class EFItemDal : EfEntityRepository<Items, EticaretContext>, IItemDal
     {
     }
 }

@@ -17,7 +17,7 @@ namespace Business.Concrete
             _itemDal = itemDal;
         }
 
-        public bool Add(Item item)
+        public bool Add(Items item)
         {
             bool result;
             try
@@ -32,7 +32,7 @@ namespace Business.Concrete
             }
             return result;
         }
-        public IEnumerable<Item> GetAll()
+        public IEnumerable<Items> GetAll()
         {
             return _itemDal.GetAll();
         }
@@ -43,7 +43,7 @@ namespace Business.Concrete
             bool result;
             try
             {
-                Item item = _itemDal.Get(x => x.ID == ID);
+                Items item = _itemDal.Get(x => x.ID == ID);
                 _itemDal.Delete(item);
                 result = true;
             }

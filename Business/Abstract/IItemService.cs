@@ -9,8 +9,8 @@ namespace Business.Abstract
 {
     public interface IItemService
     {
-        bool Add(Item item);
-        IEnumerable<Item> GetAll();
+        bool Add(Items item);
+        IEnumerable<Items> GetAll();
         bool Delete(int ID);
     }
 }

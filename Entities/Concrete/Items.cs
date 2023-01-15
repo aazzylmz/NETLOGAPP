@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrete
 {
-   public class Item:IEntity
+   public class Items:IEntity
     {
         public int ID { get; set; }
         public string ITEMCODE { get; set; }
 
         public string ITEMNAME { get; set; }
-        public float PRICE { get; set; }
+        public decimal PRICE { get; set; }
          
     }
 }

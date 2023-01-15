@@ -22,7 +22,7 @@ namespace DataAccess.Concrete.context
         }
 
         public DbSet<Customer> Customer{ get; set; }
-        public DbSet<Item> Items { get; set; }
+        public DbSet<Items> Items { get; set; }
         public DbSet<OrderFiche> OrderFiche { get; set; }
 
         public DbSet<OrderLine> OrderLine { get; set; }
