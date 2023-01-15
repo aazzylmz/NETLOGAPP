@@ -9,20 +9,20 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete
 {
-   public class CustomerManager :ICustomerService
+    public class ItemsManager :IItemService
     {
-        ICustomerDal _customerDal;
-        public CustomerManager(ICustomerDal customerDal)
+        IItemDal _itemDal;
+        public ItemsManager(IItemDal itemDal)
         {
-            _customerDal = customerDal;
+            _itemDal = itemDal;
         }
 
-        public bool Add(Customer customer)
+        public bool Add(Item item)
         {
             bool result;
             try
             {
-                _customerDal.Add(customer);
+                _itemDal.Add(item);
                 result = true;
             }
             catch (Exception ee)
@@ -32,9 +32,9 @@ namespace Business.Concrete
             }
             return result;
         }
-        public IEnumerable<Customer> GetAll()
+        public IEnumerable<Item> GetAll()
         {
-            return _customerDal.GetAll();
+            return _itemDal.GetAll();
         }
 
         public bool Delete(int ID)
@@ -43,8 +43,8 @@ namespace Business.Concrete
             bool result;
             try
             {
-                Customer customer = _customerDal.Get(x => x.ID == ID);
-                _customerDal.Delete(customer);
+                Item item = _itemDal.Get(x => x.ID == ID);
+                _itemDal.Delete(item);
                 result = true;
             }
             catch

@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace Business.Abstract
 {
- public  interface ICustomerService
+    public interface IItemService
     {
-
-        bool Add(Customer customer);
-        IEnumerable<Customer> GetAll();
+        bool Add(Item item);
+        IEnumerable<Item> GetAll();
         bool Delete(int ID);
     }
 }
