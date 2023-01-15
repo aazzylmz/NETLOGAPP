@@ -12,5 +12,6 @@ namespace Business.Abstract
 
         bool Add(Customer customer);
         IEnumerable<Customer> GetAll();
+        bool Delete(int ID);
     }
 }

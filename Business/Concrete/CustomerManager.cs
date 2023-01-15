@@ -36,5 +36,23 @@ namespace Business.Concrete
         {
             return _customerDal.GetAll();
         }
+
+        public bool Delete(int ID)
+        {
+
+            bool result;
+            try
+            {
+                Customer customer = _customerDal.Get(x => x.ID == ID);
+                _customerDal.Delete(customer);
+                result = true;
+            }
+            catch
+            {
+                result = false;
+
+            }
+            return result;
+        }
     }
 }

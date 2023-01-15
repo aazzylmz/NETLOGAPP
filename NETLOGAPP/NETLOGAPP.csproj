@@ -43,6 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -67,12 +73,51 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Musteriler.aspx" />
+    <Content Include="dist\BootStrap\css\bootstrap-grid.css" />
+    <Content Include="dist\BootStrap\css\bootstrap-grid.min.css" />
+    <Content Include="dist\BootStrap\css\bootstrap-reboot.css" />
+    <Content Include="dist\BootStrap\css\bootstrap-reboot.min.css" />
+    <Content Include="dist\BootStrap\css\bootstrap.css" />
+    <Content Include="dist\BootStrap\css\bootstrap.min.css" />
+    <Content Include="dist\BootStrap\js\bootstrap.bundle.js" />
+    <Content Include="dist\BootStrap\js\bootstrap.bundle.min.js" />
+    <Content Include="dist\BootStrap\js\bootstrap.js" />
+    <Content Include="dist\BootStrap\js\bootstrap.min.js" />
+    <Content Include="dist\Jquery\jquery-3.6.3.js" />
+    <Content Include="dist\Notiflix\css\notiflix.css" />
+    <Content Include="dist\Notiflix\js\notiflix-2.6.0.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Musteriler.aspx.cs">
+      <DependentUpon>Musteriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Musteriler.aspx.designer.cs">
+      <DependentUpon>Musteriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master.Master.cs">
+      <DependentUpon>master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master.Master.designer.cs">
+      <DependentUpon>master.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dist\BootStrap\css\bootstrap-grid.css.map" />
+    <Content Include="dist\BootStrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="dist\BootStrap\css\bootstrap-reboot.css.map" />
+    <Content Include="dist\BootStrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="dist\BootStrap\css\bootstrap.css.map" />
+    <Content Include="dist\BootStrap\css\bootstrap.min.css.map" />
+    <Content Include="dist\BootStrap\js\bootstrap.bundle.js.map" />
+    <Content Include="dist\BootStrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="dist\BootStrap\js\bootstrap.js.map" />
+    <Content Include="dist\BootStrap\js\bootstrap.min.js.map" />
+    <Content Include="master.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -80,6 +125,24 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{71467AFD-7D87-48B6-B760-52902DDA34A5}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{8CACEE1E-5912-4E6D-8FA9-05C035C1CA03}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{BDB45373-4CD9-447C-9132-A5AB434AD183}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{670CDD2E-A652-4FCA-A9C2-B338BD60119F}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
