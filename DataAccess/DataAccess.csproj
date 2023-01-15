@@ -41,7 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICustomerDal.cs" />
+    <Compile Include="Abstract\IItemDal.cs" />
+    <Compile Include="Abstract\IOrderFicheDal.cs" />
+    <Compile Include="Abstract\IOrderLineDal.cs" />
     <Compile Include="Concrete\Contexts\EticaretContext.cs" />
+    <Compile Include="Concrete\EFCustomerDal.cs" />
+    <Compile Include="Concrete\EFItemDal.cs" />
+    <Compile Include="Concrete\EFOrderFicheDal.cs" />
+    <Compile Include="Concrete\EFOrderLineDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -49,8 +57,16 @@
       <Version>6.0.0</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Abstract\" />
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{8CACEE1E-5912-4E6D-8FA9-05C035C1CA03}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{670CDD2E-A652-4FCA-A9C2-B338BD60119F}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

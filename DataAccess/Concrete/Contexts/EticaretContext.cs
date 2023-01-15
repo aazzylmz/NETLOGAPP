@@ -1,4 +1,5 @@
-﻿ 
+﻿
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -19,7 +20,15 @@ namespace DataAccess.Concrete.context
         {
             dbModelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
-        
+
+        public DbSet<Customer> Customer{ get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<OrderFiche> OrderFiche { get; set; }
+
+        public DbSet<OrderLine> OrderLine { get; set; }
+
+
+
 
 
     }
