@@ -87,7 +87,10 @@
     <Content Include="dist\Jquery\jquery-3.6.3.js" />
     <Content Include="dist\Notiflix\css\notiflix.css" />
     <Content Include="dist\Notiflix\js\notiflix-2.6.0.min.js" />
+<<<<<<< HEAD
     <Content Include="Urunler.aspx" />
+=======
+>>>>>>> 9d6cee3b2bb17f400db6e8ab3a7ad2925f27831c
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
