@@ -22,8 +22,6 @@
             </div>
         </div>
 
-        <!--Modal Musteri Save  Start-->
-        <div class="modal fade" id="PopupMusteriSave" tabindex="-1" role="dialog" aria-labelledby="musteriSave" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
