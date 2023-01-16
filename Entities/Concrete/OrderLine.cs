@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrete
 {
- public   class OrderLine:IEntity
+    public class OrderLine : IEntity
     {
         public int ID { get; set; }
         public int ORDERFICHEID { get; set; }
-
         public int ITEMID { get; set; }
-        public float UNITPRICE { get; set; }
-
+        public decimal UNITPRICE { get; set; }
         public int AMOUNT { get; set; }
 
     }

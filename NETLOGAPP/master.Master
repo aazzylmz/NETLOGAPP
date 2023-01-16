@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="NETLOGAPP.master" %>
+﻿ <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="NETLOGAPP.master" %>
 
 <!DOCTYPE html>
 
@@ -9,6 +9,7 @@
     <link href="dist/BootStrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="dist/Notiflix/css/notiflix.css" rel="stylesheet" />
     <script src="dist/Jquery/jquery-3.6.3.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="dist/BootStrap/js/bootstrap.min.js"></script>
     <script src="dist/Notiflix/js/notiflix-2.6.0.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -25,14 +26,14 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item ">
-                                <a class="nav-link" href="Customer.aspx">Müşteri Kayıt<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="Musteriler.aspx">Müşteri Kayıt<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"></a>
+                                <a class="nav-link" href="Urunler.aspx">Ürün Kayıt</a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="#"></a>
+                                <a class="nav-link" href="Siparisler.aspx">Sipariş Kayıt</a>
                             </li>
                         </ul>
                         

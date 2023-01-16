@@ -1,5 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="Urunler.aspx.cs" Inherits="NETLOGAPP.Urunler" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        window.alert = function (txt, title) {
+
+            var a = [];
+            a = txt;
+            this.console.log(txt);
+            Notiflix.Notify.Failure(txt, { timeout: 4000 });
+        }
+      
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 

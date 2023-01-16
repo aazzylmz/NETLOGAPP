@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace Business.Abstract
 {
-    public interface IItemService
+   public interface IOrderLineService
     {
-        bool Add(Items item);
-        IEnumerable<Items> GetAll();
-        bool Delete(int ID);
-        Items Get(int ID);
+        bool Add(OrderLine orderLine);
     }
 }

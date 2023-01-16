@@ -43,8 +43,12 @@
   <ItemGroup>
     <Compile Include="Abstract\ICustomerService.cs" />
     <Compile Include="Abstract\IItemService.cs" />
+    <Compile Include="Abstract\IOrderLineService.cs" />
+    <Compile Include="Abstract\IOrderService.cs" />
     <Compile Include="Concrete\CustomerManager.cs" />
     <Compile Include="Concrete\ItemsManager.cs" />
+    <Compile Include="Concrete\OrderLineManager.cs" />
+    <Compile Include="Concrete\OrderManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -16,11 +16,12 @@
      <div class="container">
         <div class="row m-2">
             <div class="col-lg-1 col-2">
-                <button type="button" class="btn btn-outline-primary btn-sm" style="height: 35px; width: 80px; font-weight: bold; padding-right: -1px" data-toggle="modal" id="2" data-target="#PopupBayiSave">
+                <button type="button" class="btn btn-outline-primary btn-sm" style="height: 35px; width: 80px; font-weight: bold; padding-right: -1px" data-toggle="modal" id="2" data-target="#PopupMusteriSave">
                     Yeni
                 </button>
             </div>
         </div>
+        <div class="modal fade" id="PopupMusteriSave" tabindex="-1" role="dialog" aria-labelledby="UrunSave" aria-hidden="true">
 
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -57,7 +58,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+       </div>
     <!--End-->
 
         <div class="row">
@@ -80,5 +81,5 @@
             </div>
         </div>
     </div>
-
+   
 </asp:Content>

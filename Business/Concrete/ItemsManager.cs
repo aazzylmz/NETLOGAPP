@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete
 {
-    public class ItemsManager :IItemService
+    public class ItemsManager : IItemService
     {
         IItemDal _itemDal;
         public ItemsManager(IItemDal itemDal)
@@ -53,6 +53,10 @@ namespace Business.Concrete
 
             }
             return result;
+        }
+        public Items Get(int ID)
+        {
+            return _itemDal.Get(x => x.ID == ID);
         }
     }
 }
